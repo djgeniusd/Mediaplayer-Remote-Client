@@ -1,0 +1,125 @@
+body{
+	overflow:hidden;
+}
+
+header,
+section,
+footer {
+	font: 2em "Courier New", Courier;
+	border-radius: 6px;
+	margin: 0 1.5% 0.5% 1.5%;
+	display:block;
+	padding: 0,2% 0,2%;
+}
+header{
+	height:5vh;
+	background-color:#e17000;
+	text-align:left;
+	color:#FFF;
+}
+section {
+	height: 85vh;
+	background:#000;
+	float: left;
+	width: 30%;
+}
+footer {
+	height:5vh;
+	background-color:#e17000;
+	text-align:left;
+	color:#FFF;
+	clear: both;
+	margin-bottom: 0;
+}
+
+/*HEAD*/
+#head{
+	padding:1px;
+	margin:2px;
+	background-color:#CCC;
+	color:#000;
+	height:35%;
+	font-size:16px;
+}
+#head h1{
+	text-align:center;
+}
+
+/*MAIN*/
+#main{
+	position:relative;
+	height:60%;
+	text-align:center;	
+}
+#main div img {
+	max-height: 100%;
+	max-width:100%;
+	position:absolute;
+	top:50%;
+	left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+	
+}
+#container{
+ }
+.hidden{
+	visibility:hidden;
+}
+/*FOOT*/
+#foot{
+	padding:1px;
+	margin:2px;
+	text-align:center;
+	background-color:transparent;
+	height:5%;
+}
+.distribute {
+    /* We first create a flex layout context */
+    display: flex;
+    /* Then we define the flow direction and if we allow the items to wrap */
+    flex-flow: row wrap;
+    /* Then we define how is distributed the remaining space */
+    justify-content: space-around;
+}
+
+/*BUTTON*/
+
+.button {
+    padding: 2%; 
+    margin: 2%;
+    text-shadow:0 1px 1px rgba(0, 0, 0, 0.25);
+    display: inline-block;
+    white-space: nowrap;
+    line-height:1em;
+    position:relative;
+    outline: none;
+    overflow: visible;
+    cursor: pointer;
+    border-radius: 4px;
+    -moz-border-radius: 4px; 
+    -webkit-border-radius:4px; 
+    box-shadow:1px 1px 2px 0 #CCCCCC;
+    -moz-box-shadow: 1px 1px 2px 0 #CCCCCC;
+    -webkit-box-shadow: 1px 1px 2px 0 #CCCCCC;
+}
+
+.button_orange {
+	min-width:5%;
+	height:4%;
+    border: 1px solid #305875;
+    color:#000;
+    background-color: #e17000;
+}
+.button_orange:hover {
+    color: #e17000;
+    opacity:0.9; 
+}
+
+@media only screen and (max-width: 320px) {
+
+   body { 
+      font-size: 2em; 
+   }
+
+}
